@@ -17,7 +17,7 @@ const meta = {
 export const metadata: Metadata = {
   title: {
     default: meta.title,
-    template: '%s | Hunter Chang',
+    template: '%s | Neonity',
   },
   description: meta.description,
   openGraph: {
