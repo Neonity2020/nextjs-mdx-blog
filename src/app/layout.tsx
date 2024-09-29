@@ -1,7 +1,6 @@
 import { ThemeProvider } from '@/app/providers'
 import { Container } from '@/components/Container'
 import Navigation from '@/components/Navigation'
-import ThemeSwitch from '@/components/ThemeSwitch'
 import { WEBSITE_HOST_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
 import Link from 'next/link'
@@ -56,11 +55,10 @@ export default function RootLayout({
             <Container>
               <div className="flex items-center justify-between py-6">
                 <Navigation />
-                <ThemeSwitch />
               </div>
             </Container>
           </header>
-          <main>
+          <main className="py-16">
             <Container>{children}</Container>
           </main>
           <footer className="py-16">
