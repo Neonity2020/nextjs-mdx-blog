@@ -13,9 +13,12 @@ export default function Home() {
   return (
     <div>
       <div className="space-y-7">
-        <h1>Neonity&#39;s logs</h1>
+        <h1>Neonity&#39;s logs </h1>
         <p>
           一个记录我心流的冥想室
+        </p>
+        <p>
+          Built with template from <Link className="link" href="https://github.com/ChangoMan/nextjs-mdx-blog">Next.js MDX Blog</Link>
         </p>
         <p>
           Next.js starter template for your next blog or personal site. Built

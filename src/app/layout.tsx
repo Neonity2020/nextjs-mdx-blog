@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@/app/providers'
 import { Container } from '@/components/Container'
-import { Navigation } from '@/components/Navigation'
+import Navigation from '@/components/Navigation'
 import ThemeSwitch from '@/components/ThemeSwitch'
 import { WEBSITE_HOST_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
@@ -8,9 +8,8 @@ import Link from 'next/link'
 import './global.css'
 
 const meta = {
-  title: 'Hunter Chang - Website',
-  description:
-    'Sleep deprived father. FE Engineer in China. Lover of Ramen and Kpop',
+  title: 'Neonity - Website',
+  description: 'A website for Neonity to share his thoughts.',
   image: `${WEBSITE_HOST_URL}/og-preview.jpg`,
 }
 
