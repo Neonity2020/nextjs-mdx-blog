@@ -4,10 +4,10 @@ export function Navigation() {
   return (
     <nav>
       <Link href="/" className="nav-link">
-        Home
+        主页
       </Link>
       <Link href="/about" className="nav-link">
-        About
+        关于
       </Link>
     </nav>
   )
