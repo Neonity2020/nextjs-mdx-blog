@@ -29,6 +29,11 @@ export default function About() {
     <div className="space-y-7">
       <h1>About</h1>
       <p>Welcome to the about page</p>
+      <p>Who am I?</p>
+      <p>Neonity is a part of me, a cyber avatar.</p>
+      <p>I am a full stack developer, a maker, and a dreamer.</p>
+      <p>I love to build things.</p>
+      <p>NeoMatrix is my blog project.</p>
     </div>
   )
 }

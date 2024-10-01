@@ -58,7 +58,7 @@ export default function RootLayout({
               </div>
             </Container>
           </header>
-          <main className="py-16">
+          <main className="py-12">
             <Container>{children}</Container>
           </main>
           <footer className="py-16">
