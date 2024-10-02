@@ -65,6 +65,7 @@ export default function Home() {
           Blog posts are written with MDX and processed through Contentlayer.
         </p>
       </div>
+      
       <div className="mt-10 space-y-12 border-t border-gray-200 pt-10 dark:border-gray-700">
         {posts.map((post, idx) => (
           <PostCard key={idx} {...post} />
