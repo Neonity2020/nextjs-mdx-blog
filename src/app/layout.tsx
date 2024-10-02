@@ -5,7 +5,7 @@ import { WEBSITE_HOST_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import './global.css'
-
+import BacktoTop from '@/components/BacktoTop'
 const meta = {
   title: 'Neonity - Website',
   description: 'A website for Neonity to share his thoughts.',
@@ -60,6 +60,9 @@ export default function RootLayout({
           </header>
           <main className="py-12">
             <Container>{children}</Container>
+            <div className="fixed bottom-10 right-10">
+              <BacktoTop />
+            </div>
           </main>
           <footer className="py-16">
             <Container>
@@ -76,3 +79,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+

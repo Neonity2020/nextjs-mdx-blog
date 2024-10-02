@@ -1,4 +1,19 @@
-# NextJS - MDX - shadcn-ui - Tailwind - Blog
+# NeoMatrix-blog -  An NextJS - MDX - shadcn-ui - Tailwind - Blog
+
+Feats:
+
+- light , dark & system theme mode toggle.
+
+- Navigation Bar: auto-hide, and other awesome effects.
+- Back to Top button: auto hide
+
+Forked from: https://github.com/ChangoMan/nextjs-mdx-blog.git
+
+Thanks to the authors, I learned a lot.
+
+---
+
+https://github.com/ChangoMan/nextjs-mdx-blog.git
 
 **UPDATED on 2023-08-22 to use Next.js App Router!**
 
