@@ -65,7 +65,7 @@ export default function RootLayout({
             </Container>
 
           </main>
-          <footer className="py-16">
+          <footer className="py-20">
             <Container>
               <p>
                 Built by{' '}
