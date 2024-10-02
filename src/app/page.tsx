@@ -17,8 +17,24 @@ export default function Home() {
           NeoMatrix - 一个记录我心流的冥想室 | 2024-10-1 08:42:13 by Neonity
         </p>
         <h1>Neonity&#39;s logs </h1>
+        
+      </div>
+
+      <div className="mt-16">
+        <h2>From the blog</h2>
+        <p className="mt-2 leading-8">
+          Blog posts are written with MDX and processed through Contentlayer.
+        </p>
+      </div>
+      
+      <div className="mt-10 space-y-12 border-t border-gray-200 pt-10 dark:border-gray-700">
+        {posts.map((post, idx) => (
+          <PostCard key={idx} {...post} />
+        ))}
+      </div>
+      <div>
         <p>
-          Built with template from <Link className="link" href="https://github.com/ChangoMan/nextjs-mdx-blog">Next.js MDX Blog</Link>
+            Built with template from <Link className="link" href="https://github.com/ChangoMan/nextjs-mdx-blog">Next.js MDX Blog</Link>
         </p>
         <p>
           Next.js starter template for your next blog or personal site. Built
@@ -57,19 +73,6 @@ export default function Home() {
             <Github className="mr-1" /> Get the source code!
           </a>
         </Button>
-      </div>
-
-      <div className="mt-16">
-        <h2>From the blog</h2>
-        <p className="mt-2 leading-8">
-          Blog posts are written with MDX and processed through Contentlayer.
-        </p>
-      </div>
-      
-      <div className="mt-10 space-y-12 border-t border-gray-200 pt-10 dark:border-gray-700">
-        {posts.map((post, idx) => (
-          <PostCard key={idx} {...post} />
-        ))}
       </div>
     </div>
   )
