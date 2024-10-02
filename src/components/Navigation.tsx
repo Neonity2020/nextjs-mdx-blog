@@ -13,6 +13,12 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
+  const handleClickOutside = (event) => {
+    if (isOpen && !event.target.closest('.menu-container')) { // 检查点击是否在菜单外
+      closeMenu();
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -31,6 +37,13 @@ export default function Navigation() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    window.addEventListener("click", handleClickOutside); // 添加点击事件监听
+    return () => {
+      window.removeEventListener("click", handleClickOutside); // 清理事件监听
+    };
+  }, [isOpen]);
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 bg-opacity-70 backdrop-blur-md bg-background/80 dark:bg-gray-800/80 shadow-sm transition-transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
@@ -55,7 +68,7 @@ export default function Navigation() {
           </Link>
         </div>
         {/* 汉堡包 */}
-        <div className="md:hidden flex items-center justify-end w-full">
+        <div className="md:hidden flex items-center justify-end w-full menu-container"> {/* 添加类名 */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="ml-4 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
