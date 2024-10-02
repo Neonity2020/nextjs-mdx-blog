@@ -59,21 +59,26 @@ export default function RootLayout({
             </Container>
           </header>
           <main className="py-12">
-            <Container>{children}</Container>
-            <div className="fixed bottom-10 right-10">
-              <BacktoTop />
-            </div>
+            <Container>
+              {children}
+
+            </Container>
+
           </main>
           <footer className="py-16">
             <Container>
               <p>
                 Built by{' '}
-                <Link className="link" href="https://twitter.com/neonity2022">
+                <Link className="link" href="/about">
                   Neonity
                 </Link>
               </p>
             </Container>
           </footer>
+          <div className="fixed bottom-10 right-4">
+              <BacktoTop />
+          </div>
+
         </ThemeProvider>
       </body>
     </html>
