@@ -75,10 +75,10 @@ export default function RootLayout({
               </p>
             </Container>
           </footer>
-          <div className="fixed bottom-10 right-4">
+
+          <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-auto">
               <BacktoTop />
           </div>
-
         </ThemeProvider>
       </body>
     </html>
