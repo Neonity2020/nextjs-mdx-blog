@@ -36,16 +36,7 @@ export default function Navigation() {
     <nav className={`fixed top-0 left-0 right-0 z-50 bg-opacity-70 backdrop-blur-md bg-background/80 dark:bg-gray-800/80 shadow-sm transition-transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       {/* 移动端导航栏 */}
       <div className="relative flex items-center justify-between max-w-4xl mx-auto px-4 py-5 md:px-6 md:py-6 md:text-base">
-        {/* 汉堡包 */}
-        <div className="md:hidden flex items-center justify-left w-full">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="ml-4 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-          >
-            <Menu className="h-6 w-6" />
-          </button>
-          <ModeToggle />
-        </div>
+
         <div className="flex justify-center items-center"> {/* 使链接居中 */}
           <Link href="/" className="font-bold text-3xl md:text-4xl whitespace-nowrap">
             Neonity&apos;s <span className="text-green-700">Blog</span>
@@ -62,6 +53,16 @@ export default function Navigation() {
           <Link href="/about" className="text-sm font-medium hover:text-green-500">
             关于
           </Link>
+        </div>
+        {/* 汉堡包 */}
+        <div className="md:hidden flex items-center justify-end w-full">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="ml-4 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          >
+            <Menu className="h-6 w-6" />
+          </button>
+          <ModeToggle />
         </div>
         <div className="hidden md:flex">
           <ModeToggle />
