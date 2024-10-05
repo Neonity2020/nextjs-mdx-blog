@@ -64,7 +64,7 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --link: #d32db7;
+    --link: #249e42;
   }
 }
 
@@ -110,7 +110,7 @@
 .prose {
   @apply list-disc;
   --tw-prose-bullets: #3eb127;
-  --tw-prose-invert-bullets: #d32db7;
+  --tw-prose-invert-bullets: #249e42;
 }
 
 .prose .anchor {

@@ -1,3 +1,5 @@
+'use client'
+
 import { WEBSITE_HOST_URL } from '@/lib/constants'
 import { allPosts } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
@@ -7,6 +9,7 @@ import { useMDXComponent } from 'next-contentlayer/hooks'
 import NextImage from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import TOC from '@/components/TOC';
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
@@ -69,7 +72,9 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
         {format(parseISO(post.date), 'LLLL d, yyyy')}
       </time>
       <article className="prose dark:prose-invert">
+        <TOC />
         <MDXContent components={mdxComponents} />
+        Go back <Link href="/">Home</Link>.
       </article>
     </div>
   )
