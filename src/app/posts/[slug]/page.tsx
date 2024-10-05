@@ -1,5 +1,3 @@
-'use client'
-
 import { WEBSITE_HOST_URL } from '@/lib/constants'
 import { allPosts } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
