@@ -33,6 +33,7 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+    --link: #3eb127;
   }
 
   .dark {
@@ -63,6 +64,7 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+    --link: #d32db7;
   }
 }
 
@@ -96,6 +98,7 @@
 
   .link {
     @apply text-primary hover:text-primary/90;
+    color: var(--link);
   }
 }
 
@@ -104,6 +107,11 @@
 }
 
 /* Post styles */
+.prose {
+  @apply list-disc;
+  --tw-prose-bullets: #3eb127;
+  --tw-prose-invert-bullets: #d32db7;
+}
 
 .prose .anchor {
   @apply absolute invisible no-underline;
