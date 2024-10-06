@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <div>
       <div className="space-y-7">
+
+        <h1>Neonity&#39;s logs </h1>
         <p>
           NeoMatrix - 一个记录我心流的冥想室 | 2024-10-1 08:42:13 by Neonity
         </p>
-        <h1>Neonity&#39;s logs </h1>
-        
       </div>
 
       <div className="mt-16">

@@ -1,11 +1,8 @@
 import { WEBSITE_HOST_URL } from '@/lib/constants'
 import type { Metadata } from 'next'
 import { PostCard } from '@/components/PostCard'
-import { Button } from '@/components/ui/button'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc } from 'date-fns'
-import { Github } from 'lucide-react'
-import Link from 'next/link'
 
 const posts = allPosts.sort((a, b) =>
   compareDesc(new Date(a.date), new Date(b.date)),

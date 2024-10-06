@@ -23,7 +23,7 @@ const TOC: React.FC = () => {
 
     return (
         <div>
-            <span className="text-3xl font-bold mt-4 mb-4">Contents</span>
+            <span className="text-2xl font-bold mt-4 mb-4">Contents</span>
             
             <ul className="list-disc pl-5"> {/* 添加项目符号样式 */}
                 {headings.map((heading) => (
