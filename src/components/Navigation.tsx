@@ -46,7 +46,7 @@ export default function Navigation() {
   }, [isOpen]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 bg-opacity-70 backdrop-blur-md bg-background/80 dark:bg-gray-800/80 shadow-sm transition-transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-opacity-70 backdrop-blur-sm bg-background/80 dark:bg-gray-800/80 shadow-sm transition-transform ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       {/* 移动端导航栏 */}
       <div className="relative flex items-center justify-between max-w-4xl mx-auto px-4 py-5 md:px-6 md:py-6 md:text-base">
 
@@ -63,9 +63,13 @@ export default function Navigation() {
           <Link href="/blog" className="text-sm font-medium hover:text-green-500">
             博客
           </Link>
+          <Link href="/features" className="text-sm font-medium hover:text-green-500">
+            博客功能介绍
+          </Link>
           <Link href="/about" className="text-sm font-medium hover:text-green-500">
             关于
           </Link>
+
         </div>
         {/* 汉堡包 */}
         <div className="md:hidden flex items-center justify-end w-full menu-container"> {/* 添加类名 */}
